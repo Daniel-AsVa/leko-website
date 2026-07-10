@@ -1,0 +1,210 @@
+/* LeKo - Grunddesign */
+
+:root {
+    html {
+    scroll-behavior: smooth;
+}
+    --leko-blue: #6A9FB5;
+    --leko-gold: #C8A04D;
+    --leko-cream: #F7F1E3;
+    --leko-dark: #333333;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--leko-cream);
+    color: var(--leko-dark);
+}
+
+
+header {
+    background-color: var(--leko-blue);
+    padding: 20px;
+    text-align: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+
+header h1 {
+    color: white;
+    font-size: 40px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+main {
+    padding: 40px;
+}
+
+
+section {
+    background-color: white;
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+
+h2 {
+    color: var(--leko-blue);
+}
+
+
+footer {
+    background-color: var(--leko-gold);
+    text-align: center;
+    padding: 20px;
+}
+.logo-container {
+    text-align: center;
+}
+
+
+.logo-placeholder {
+    width: 120px;
+    height: 120px;
+    background-color: var(--leko-gold);
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+
+.logo-container h1 {
+    margin: 10px;
+    font-size: 45px;
+}
+
+
+.logo-container p {
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+}
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--leko-cream);
+}
+
+
+.hero h2 {
+    font-size: 42px;
+    color: var(--leko-blue);
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+
+.hero button {
+    background-color: var(--leko-gold);
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+.hero button:hover {
+    background-color: var(--leko-blue);
+}
+.about {
+    background-color: white;
+    padding: 50px 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.about p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+.community {
+    background-color: var(--leko-blue);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+.community h2 {
+    color: white;
+}
+
+
+.community p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+
+.community-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+
+.community-card {
+    background-color: white;
+    color: var(--leko-dark);
+    width: 220px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+
+.community-card h3 {
+    color: var(--leko-blue);
+}
+.logo {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    border-radius: 12px;
+}
