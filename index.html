@@ -13,50 +13,63 @@
 
 <body>
 
-    <header>
-      
-    <div class="logo-container">
+   <header class="site-header">
 
-      <img src="images/logo.jpg" alt="LeKo Logo" class="logo">
+    <div class="header-inner">
 
-        <h1>LeKo</h1>
+        <a href="#start" class="brand">
+            <img src="images/logo.jpg" alt="LeKo Logo" class="header-logo">
 
-        <p>
-            Gemeinsam. Fair. Regional. Biologisch.
-        </p>
+            <div class="brand-text">
+                <span class="brand-name">LeKo</span>
+                <span class="brand-location">Weimar</span>
+            </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Hauptnavigation">
+            <ul>
+                <li><a href="#wer-wir-sind">Wer wir sind</a></li>
+                <li><a href="#was-uns-verbindet">Was uns verbindet</a></li>
+                <li><a href="#wie-wir-entscheiden">Wie wir entscheiden</a></li>
+                <li><a href="#geschichten">Geschichten aus der LeKo</a></li>
+                <li><a href="#mitglied-werden">Mitglied werden</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="language-nav" aria-label="Sprachauswahl">
+            <a href="#" class="active">DE</a>
+            <a href="#">EN</a>
+            <a href="#">ES</a>
+        </div>
 
     </div>
 
-
-    <nav>
-    <ul>
-        <li><a href="#start">Start</a></li>
-        <li><a href="#ueber-uns">Über uns</a></li>
-        <li><a href="#produkte">Produkte</a></li>
-        <li><a href="#werte">Werte</a></li>
-        <li><a href="#gemeinschaft">Gemienschaft</a></li>
-    </ul>
-</nav>
-    </header>
+</header>
 
       <section class="hero" id="start">
 
-    <h2>
-        Gemeinsam einkaufen.
-        Nachhaltig leben.
-    </h2>
+    <img src="images/logo.jpg" alt="LeKo Logo" class="hero-logo">
 
-    <p>
-        Eine Lebensmittelkooperative aus Weimar,
-        die Menschen verbindet und nachhaltigen Konsum fördert.
+    <h1>Lebensmittelkooperative Weimar</h1>
+
+    <p class="hero-slogan">
+        Regional einkaufen.<br>
+        Nachhaltig handeln.<br>
+        Gemeinschaft leben.
     </p>
 
-    <button>
-        Mehr erfahren
-    </button>
+    <div class="hero-buttons">
+        <a href="#about" class="btn">Mitglied werden</a>
+        <a href="#values" class="btn btn-secondary">Mehr erfahren</a>
+    </div>
+
+    <p class="hero-values">
+        Regional • Biologisch • Verpackungsarm • Solidarisch • Selbstorganisiert
+    </p>
 
 </section>
-<section class="about" id="ueber-uns">
+<section class="about" id="wer-wir-sind">
 
     <h2>
         Über uns
@@ -75,7 +88,7 @@
     </p>
 
 </section>
-<section class="values" id="werte">
+<section class="values" id="was-uns-verbindet">
 
     <h2>
         Unsere Werte
@@ -229,7 +242,7 @@
     </div>
 
 </section>
-<section class="products" id="produkte">
+<section class="products" id="wie-wir-entscheiden">
 
     <h2>
         Unsere Produkte
@@ -327,6 +340,34 @@
 
 
     </main>
+    <section class="decision" id="wie-wir-entscheiden">
+    <h2>Wie wir entscheiden</h2>
+
+    <p>
+        Gemeinsam wählen wir Produkte und Produzenten aus,
+        die zu unseren sozialen und ökologischen Werten passen.
+    </p>
+</section>
+
+
+<section class="stories" id="geschichten">
+    <h2>Geschichten aus der LeKo</h2>
+
+    <p>
+        Hier möchten wir künftig Erinnerungen,
+        Erfahrungen und Geschichten unserer Mitglieder teilen.
+    </p>
+</section>
+
+
+<section class="join" id="mitglied-werden">
+    <h2>Mitglied werden</h2>
+
+    <p>
+        Du möchtest LeKo kennenlernen und Teil unserer
+        Gemeinschaft werden? Wir freuen uns auf dich.
+    </p>
+</section>
 
     <footer>
 
