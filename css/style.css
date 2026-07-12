@@ -342,3 +342,119 @@ footer {
     object-fit: contain;
     border-radius: 12px;
 }
+/* Mobile-Version */
+
+@media (max-width: 768px) {
+
+    .header-inner {
+        width: calc(100% - 30px);
+        min-height: auto;
+        padding: 12px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+
+    .brand {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .header-logo {
+        width: 52px;
+        height: 52px;
+    }
+
+
+    .main-nav {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+
+    .main-nav a {
+        font-size: 16px;
+    }
+
+
+    .language-nav {
+        padding-left: 0;
+        border-left: none;
+        justify-content: center;
+    }
+
+
+    .hero {
+        padding: 55px 20px 45px;
+    }
+
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+
+    .hero-slogan {
+        font-size: 22px;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .btn {
+        width: min(280px, 100%);
+        box-sizing: border-box;
+    }
+
+
+    .hero-values {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+
+    section {
+        width: auto;
+        margin: 20px 15px;
+        padding: 30px 20px;
+    }
+
+
+    .value-container,
+    .community-container,
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .value-card,
+    .community-card,
+    .product-card {
+        width: 100%;
+        max-width: 320px;
+        box-sizing: border-box;
+    }
+
+
+    h2 {
+        font-size: 28px;
+    }
+
+
+    p {
+        overflow-wrap: break-word;
+    }
+}
