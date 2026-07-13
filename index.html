@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-
 <body>
 
    <header class="site-header">
@@ -26,44 +25,71 @@
             </div>
         </a>
 
-        <nav class="main-nav" aria-label="Hauptnavigation">
-            <ul>
-                <li><a href="#wer-wir-sind">Wer wir sind</a></li>
-                <li><a href="#was-uns-verbindet">Was uns verbindet</a></li>
-                <li><a href="#wie-wir-entscheiden">Wie wir entscheiden</a></li>
-                <li><a href="#geschichten">Geschichten aus der LeKo</a></li>
-                <li><a href="#mitglied-werden">Mitglied werden</a></li>
-            </ul>
+       <nav class="main-nav" aria-label="Hauptnavigation">
+    <ul>
+        <li>
+            <a href="#wer-wir-sind" data-i18n="nav.about">
+                Wer wir sind
+            </a>
+        </li>
 
-        </nav>
+        <li>
+            <a href="#was-uns-verbindet" data-i18n="nav.values">
+                Was uns verbindet
+            </a>
+        </li>
 
-       <div class="language-nav" aria-label="Sprachauswahl">
-            <a href="index.html" class="active">DE</a>
-            <a href="en/index.html">EN</a>
-            <a href="es/index.html">ES</a>
+        <li>
+            <a href="#wie-wir-entscheiden" data-i18n="nav.decisions">
+                Wie wir entscheiden
+            </a>
+        </li>
 
-        </div>
+        <li>
+            <a href="#geschichten" data-i18n="nav.stories">
+                Geschichten aus der LeKo
+            </a>
+        </li>
+
+        <li>
+            <a href="#mitglied-werden" data-i18n="nav.join">
+                Mitglied werden
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div class="language-nav" aria-label="Sprachauswahl">
+    <button type="button" class="language-button active" data-language="de">DE</button>
+    <button type="button" class="language-button" data-language="en">EN</button>
+    <button type="button" class="language-button" data-language="es">ES</button>
+</div>
+
+</div>
 
 </header>
 
-      <section class="hero" id="start">
+     <section class="hero" id="start">
 
-    <img src="images/logo.jpg" alt="LeKo Logo" class="hero-logo">
+    <h1 data-i18n="hero.title">
+        Mehr als Lebensmittel. Eine Gemeinschaft.
+    </h1>
 
-    <h1>Lebensmittelkooperative Weimar</h1>
-
-    <p class="hero-slogan">
-        Regional einkaufen.<br>
-        Nachhaltig handeln.<br>
-        Gemeinschaft leben.
+    <p class="hero-slogan" data-i18n="hero.slogan">
+        Regional einkaufen. Verantwortung teilen. Gemeinschaft leben.
     </p>
 
     <div class="hero-buttons">
-        <a href="#about" class="btn">Mitglied werden</a>
-        <a href="#values" class="btn btn-secondary">Mehr erfahren</a>
+        <a href="#mitglied-werden" class="btn" data-i18n="hero.join">
+            Mitglied werden
+        </a>
+
+        <a href="#wer-wir-sind" class="btn btn-secondary" data-i18n="hero.learn">
+            Mehr erfahren
+        </a>
     </div>
 
-    <p class="hero-values">
+    <p class="hero-values" data-i18n="hero.values">
         Regional • Biologisch • Verpackungsarm • Solidarisch • Selbstorganisiert
     </p>
 
@@ -377,6 +403,7 @@
     </footer>
 
 
+<script src="js/script.js"></script>
 </body>
 
 </html>

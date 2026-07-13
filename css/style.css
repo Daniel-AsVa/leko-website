@@ -133,16 +133,20 @@ body {
 }
 
 
-.language-nav a {
+.language-button {
+    border: none;
+    background: transparent;
     color: var(--leko-dark);
-    text-decoration: none;
+    padding: 5px;
+    font: inherit;
     font-size: 13px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 
-.language-nav a:hover,
-.language-nav a.active {
+.language-button:hover,
+.language-button.active {
     color: var(--leko-blue);
 }
 
