@@ -89,3 +89,25 @@ languageButtons.forEach((button) => {
 
 const savedLanguage = localStorage.getItem("leko-language") || "de";
 changeLanguage(savedLanguage);
+const menuToggle = document.querySelector(".menu-toggle");
+const mainNav = document.querySelector(".main-nav");
+const languageNav = document.querySelector(".language-nav");
+
+if (menuToggle && mainNav && languageNav) {
+    menuToggle.addEventListener("click", () => {
+        const isOpen = mainNav.classList.toggle("is-open");
+
+        languageNav.classList.toggle("is-open", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.textContent = isOpen ? "✕ Schließen" : "☰ Menü";
+    });
+
+    mainNav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            mainNav.classList.remove("is-open");
+            languageNav.classList.remove("is-open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.textContent = "☰ Menü";
+        });
+    });
+}
