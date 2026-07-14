@@ -13,7 +13,7 @@ const translations = {
         "hero.join": "Mitglied werden",
         "hero.learn": "Mehr erfahren",
         "hero.values":
-            "Regional • Biologisch • Verpackungsarm • Solidarisch • Selbstorganisiert"
+            "Regional + Biologisch + Verpackungsarm + Solidarisch + Selbstorganisiert"
     },
 
     en: {
@@ -29,7 +29,7 @@ const translations = {
         "hero.join": "Become a member",
         "hero.learn": "Learn more",
         "hero.values":
-            "Regional • Organic • Low packaging • Solidarity • Self-organised"
+            "Regional + Organic + Low packaging + Solidarity + Self-organised"
     },
 
     es: {
@@ -45,7 +45,7 @@ const translations = {
         "hero.join": "Hazte miembro",
         "hero.learn": "Conoce más",
         "hero.values":
-            "Regional • Ecológico • Poco embalaje • Solidario • Autogestionado"
+            "Regional + Ecológico + Menos plastico + Solidario + Autogestionado"
     }
 };
 

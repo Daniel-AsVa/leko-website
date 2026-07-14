@@ -248,48 +248,66 @@ footer {
 }
 
 .hero-content {
-    width: min(1180px, 100%);
+    width: min(900px, 100%);
     margin: 0 auto;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 56px;
+
+    text-align: center;
+
+    gap: 28px;
 }
 
 .hero-text {
-    flex: 1 1 52%;
-    text-align: left;
+    max-width: 700px;
 }
 
 .hero h1 {
     margin: 0 0 24px;
     color: var(--leko-blue);
-    font-size: clamp(42px, 5vw, 68px);
+    font-size: clamp(42px, 5vw, 64px);
     line-height: 1.08;
 }
 
 .hero-slogan {
-    max-width: 600px;
-    margin: 0 0 32px;
-    font-size: 23px;
-    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 1.7;
 }
 
 .hero-buttons {
+
     display: flex;
+
+    justify-content: center;
+
     flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 30px;
+
+    gap: 18px;
+
+    margin-top: 5px;
+
 }
 
 .hero-values {
-    max-width: 680px;
+
+    max-width: 780px;
+
     margin: 0;
+
     color: var(--leko-blue);
-    font-size: 15px;
-    font-weight: 700;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
     line-height: 1.8;
+
+    letter-spacing: 0.6px;
+
 }
 
 .hero-image {
@@ -299,12 +317,11 @@ footer {
 }
 
 .hero-image img {
-    display: block;
     width: 100%;
-    max-width: 480px;
+    max-width: 560px;
     height: auto;
-    border-radius: 22px;
-    box-shadow: 0 18px 45px rgba(58, 52, 46, 0.12);
+
+    display: block;
 }
 
 .about {
@@ -409,16 +426,30 @@ footer {
 
     .menu-toggle {
     display: block;
+    transition: background-color 0.25s ease,
+            transform 0.2s ease;
+    }
+    .menu-toggle:hover {
+        transform: scale(1.05);
     }
 
     .main-nav {
-        display: none;
         width: 100%;
         margin-left: 0;
+
+        max-height: 0;
+        overflow: hidden;
+
+        opacity: 0;
+
+        transition:
+        max-height 0.35s ease,
+        opacity 0.25s ease;
     }
 
     .main-nav.is-open {
-        display: block;
+        max-height: 400px;
+        opacity: 1;
     }
 
     .main-nav ul {
