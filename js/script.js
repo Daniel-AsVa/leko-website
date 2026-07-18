@@ -13,8 +13,9 @@ const translations = {
         "hero.join": "Mitglied werden",
         "hero.learn": "Mehr erfahren",
         "hero.values":
-            "Regional + Biologisch + Verpackungsarm + Solidarisch + Selbstorganisiert"
-
+            "Regional + Biologisch + Verpackungsarm + Solidarisch + Selbstorganisiert",
+       
+    
         "about.title": "Über uns",
         "about.paragraph1": "LeKo ist eine Lebensmittelkooperative aus Weimar, die von Menschen getragen wird, die gemeinsam nachhaltige Lebensmittel einkaufen.",
         "about.paragraph2": "Durch gemeinsame Großbestellungen können wir faire, regionale und biologische Produkte beziehen und gleichzeitig Verpackungsmüll reduzieren."
@@ -33,7 +34,7 @@ const translations = {
         "hero.join": "Become a member",
         "hero.learn": "Learn more",
         "hero.values":
-            "Regional + Organic + Low packaging + Solidarity + Self-organised"
+            "Regional + Organic + Low packaging + Solidarity + Self-organised",
 
         "about.title": "About us",
         "about.paragraph1": "LeKo is a food cooperative based in Weimar, supported by people who purchase sustainably produced food together.",
@@ -55,7 +56,7 @@ const translations = {
         "hero.join": "Hazte miembro",
         "hero.learn": "Conoce más",
         "hero.values":
-            "Regional + Ecológico + Menos plastico + Solidario + Autogestionado"
+            "Regional + Ecológico + Menos plastico + Solidario + Autogestionado",
    
     
         "about.title": "Sobre nosotros",
