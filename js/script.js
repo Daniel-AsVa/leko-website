@@ -3,10 +3,11 @@ const translations = {
     de: {
         "nav.about": "Wer wir sind",
         "nav.values": "Was uns verbindet",
-        "nav.decisions": "Was wir anbieten",
+        "nav.community": "Unsere Gemeinschaft",
+        "nav.products": "Was wir anbieten",
         "nav.stories": "Geschichten aus der LeKo",
         "nav.join": "Mitglied werden",
-
+        
         "hero.title": "Mehr als Lebensmittel. Eine Gemeinschaft.",
         "hero.slogan":
             "Regional einkaufen. Verantwortung teilen. Gemeinschaft leben.",
@@ -82,10 +83,11 @@ const translations = {
     en: {
         "nav.about": "Who we are",
         "nav.values": "What connects us",
-        "nav.decisions": "What We Offer",
+        "nav.community": "Our Community",
+        "nav.products": "What We Offer",
         "nav.stories": "Stories from LeKo",
         "nav.join": "Become a member",
-
+        
         "hero.title": "More than food. A community.",
         "hero.slogan":
             "Shop locally. Share responsibility. Live as a community.",
@@ -158,10 +160,11 @@ const translations = {
     es: {
         "nav.about": "Quiénes somos",
         "nav.values": "Lo que nos une",
-        "nav.decisions": "Lo que ofrecemos",
+        "nav.community": "Nuestra comunidad",
+        "nav.products": "Lo que ofrecemos",
         "nav.stories": "Historias de LeKo",
         "nav.join": "Hazte miembro",
-
+        
         "hero.title": "Más que alimentos. Una comunidad.",
         "hero.slogan":
             "Comprar de forma regional. Compartir responsabilidades. Vivir en comunidad.",
