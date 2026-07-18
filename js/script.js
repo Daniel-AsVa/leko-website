@@ -3,7 +3,7 @@ const translations = {
     de: {
         "nav.about": "Wer wir sind",
         "nav.values": "Was uns verbindet",
-        "nav.decisions": "Wie wir entscheiden",
+        "nav.decisions": "Was wir anbieten",
         "nav.stories": "Geschichten aus der LeKo",
         "nav.join": "Mitglied werden",
 
@@ -82,7 +82,7 @@ const translations = {
     en: {
         "nav.about": "Who we are",
         "nav.values": "What connects us",
-        "nav.decisions": "How we decide",
+        "nav.decisions": "What We Offer",
         "nav.stories": "Stories from LeKo",
         "nav.join": "Become a member",
 
@@ -158,7 +158,7 @@ const translations = {
     es: {
         "nav.about": "Quiénes somos",
         "nav.values": "Lo que nos une",
-        "nav.decisions": "Cómo decidimos",
+        "nav.decisions": "Lo que ofrecemos",
         "nav.stories": "Historias de LeKo",
         "nav.join": "Hazte miembro",
 
