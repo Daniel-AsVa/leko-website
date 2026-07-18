@@ -397,6 +397,54 @@ footer {
     font-weight: 700;
     cursor: pointer;
 }
+/* Network*/
+
+.network {
+    padding: 5rem 1.5rem;
+    text-align: center;
+}
+
+.network-content {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+}
+
+.network-content p {
+    max-width: 700px;
+    margin: 1rem auto 3rem;
+}
+
+.network-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.network-grid a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.5rem;
+
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+
+    transition: transform .2s ease;
+}
+
+.network-grid a:hover {
+    transform: translateY(-4px);
+}
+
+.network-grid img {
+    max-width: 150px;
+    max-height: 80px;
+    object-fit: contain;
+}
+
 
 /* Mobile-Version */
 

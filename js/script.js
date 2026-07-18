@@ -6,6 +6,7 @@ const translations = {
         "nav.community": "Unsere Gemeinschaft",
         "nav.products": "Was wir anbieten",
         "nav.stories": "Geschichten aus der LeKo",
+        "nav.network": "Unser Netzwerk",
         "nav.join": "Mitglied werden",
         
         "hero.title": "Mehr als Lebensmittel. Eine Gemeinschaft.",
@@ -69,6 +70,9 @@ const translations = {
         "decision.title": "Wie wir entscheiden",
         "decision.text": "Gemeinsam wählen wir Produkte und Produzenten aus, die zu unseren sozialen und ökologischen Werten passen.",
 
+        "network.title": "Unser Netzwerk",
+        "network.text": "Gemeinsam mit regionalen Produzent:innen, Initiativen und Partnerorganisationen setzen wir uns für eine nachhaltige und solidarische Lebensmittelversorgung ein.",
+
         "stories.title": "Geschichten aus der LeKo",
         "stories.text": "Hier möchten wir künftig Erinnerungen, Erfahrungen und Geschichten unserer Mitglieder teilen.",
 
@@ -86,6 +90,7 @@ const translations = {
         "nav.community": "Our Community",
         "nav.products": "What We Offer",
         "nav.stories": "Stories from LeKo",
+        "nav.network": "Our Network",
         "nav.join": "Become a member",
         
         "hero.title": "More than food. A community.",
@@ -151,6 +156,9 @@ const translations = {
         "stories.title": "Stories from LeKo",
         "stories.text": "In the future, we would like to share memories, experiences and stories from our members here.",
 
+        "network.title": "Our Network",
+        "network.text": "Together with regional producers, initiatives and partner organisations, we work towards a sustainable and solidarity-based food system.",
+
         "join.title": "Become a member",
         "join.text": "Would you like to get to know LeKo and become part of our community? We look forward to meeting you.",
 
@@ -163,6 +171,7 @@ const translations = {
         "nav.community": "Nuestra comunidad",
         "nav.products": "Lo que ofrecemos",
         "nav.stories": "Historias de LeKo",
+        "nav.network": "Nuestra red",
         "nav.join": "Hazte miembro",
         
         "hero.title": "Más que alimentos. Una comunidad.",
@@ -228,6 +237,9 @@ const translations = {
 
         "stories.title": "Historias de LeKo",
         "stories.text": "En el futuro queremos compartir aquí recuerdos, experiencias e historias de nuestros miembros.",
+
+        "network.title": "Nuestra red",
+        "network.text": "Junto con productores regionales, iniciativas y organizaciones colaboradoras trabajamos por un sistema alimentario sostenible y solidario.",
 
         "join.title": "Hazte miembro",
         "join.text": "¿Te gustaría conocer LeKo y formar parte de nuestra comunidad? Estaremos encantados de conocerte.",
