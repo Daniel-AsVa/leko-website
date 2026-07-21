@@ -71,7 +71,7 @@ const translations = {
         "decision.text": "Gemeinsam wählen wir Produkte und Produzenten aus, die zu unseren sozialen und ökologischen Werten passen.",
 
         "network.title": "Unser Netzwerk",
-        "network.text": "Gemeinsam mit regionalen Produzent:innen, Initiativen und Partnerorganisationen setzen wir uns für eine nachhaltige und solidarische Lebensmittelversorgung ein.",
+        "network.text": "Gemeinsam mit regionalen Produzent:innen und Initiativen setzen wir uns für eine nachhaltige und solidarische Lebensmittelversorgung ein.",
 
         "stories.title": "Geschichten aus der LeKo",
         "stories.text": "Hier möchten wir künftig Erinnerungen, Erfahrungen und Geschichten unserer Mitglieder teilen.",
@@ -157,7 +157,7 @@ const translations = {
         "stories.text": "In the future, we would like to share memories, experiences and stories from our members here.",
 
         "network.title": "Our Network",
-        "network.text": "Together with regional producers, initiatives and partner organisations, we work towards a sustainable and solidarity-based food system.",
+        "network.text": "Together with regional producers und initiatives, we work towards a sustainable and solidarity-based food system.",
 
         "join.title": "Become a member",
         "join.text": "Would you like to get to know LeKo and become part of our community? We look forward to meeting you.",
@@ -239,7 +239,7 @@ const translations = {
         "stories.text": "En el futuro queremos compartir aquí recuerdos, experiencias e historias de nuestros miembros.",
 
         "network.title": "Nuestra red",
-        "network.text": "Junto con productores regionales, iniciativas y organizaciones colaboradoras trabajamos por un sistema alimentario sostenible y solidario.",
+        "network.text": "Junto con productores regionales y iniciativas trabajamos por un sistema alimentario sostenible y solidario.",
 
         "join.title": "Hazte miembro",
         "join.text": "¿Te gustaría conocer LeKo y formar parte de nuestra comunidad? Estaremos encantados de conocerte.",
@@ -313,3 +313,12 @@ if (menuToggle && mainNav && languageNav) {
         });
     });
 }
+
+document.querySelectorAll(".product-toggle").forEach(button => {
+    button.addEventListener("click", () => {
+        const productList = button.nextElementSibling;
+
+        productList.classList.toggle("open");
+        button.classList.toggle("active");
+    });
+});

@@ -673,3 +673,52 @@ footer {
         overflow-wrap: break-word;
     }
 }
+
+/* Botón de las categorías */
+.product-toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    font: inherit;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--leko-blue);
+    cursor: pointer;
+    padding: 10px 0;
+    text-align: center;
+    transition: color 0.2s ease;
+}
+
+.product-toggle:hover {
+    color: var(--leko-gold);
+}
+
+/* Lista oculta */
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+
+}
+
+/* Lista visible */
+.product-list.open {
+    max-height: 300px;
+}
+
+.product-list li {
+    margin: 8px 0;
+}
+
+.arrow {
+    display: inline-block;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-toggle.active .arrow {
+    transform: rotate(90deg);
+}
