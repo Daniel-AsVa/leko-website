@@ -1,6 +1,7 @@
 /* LeKo - Grunddesign */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 :root {
    
@@ -8,6 +9,12 @@ html {
     --leko-gold: #C8A04D;
     --leko-cream: #F7F1E3;
     --leko-dark: #333333;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 body {
@@ -150,23 +157,30 @@ body {
 }
 
 main {
-    padding: 40px;
+    padding: 0;
 }
 
 
 section {
     background-color: white;
-    margin: 30px auto;
-    padding: 30px;
-    max-width: 900px;
+    width: min(900px; calc(100% - 40px));
+    margin: 40px auto;
+    padding: 50px 30px;
     border-radius: 10px;
 }
 
 
 h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
     color: var(--leko-blue);
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.2;
 }
 
+p {
+    line-height: 1.7;
+}
 
 footer {
     background-color: var(--leko-gold);
@@ -222,6 +236,14 @@ footer {
     transform: translateY(-2px);
 }
 
+.btn:focus-visible,
+.main-nav a:focus-visible,
+.language-button:focus-visible,
+.menu-toggle:focus-visible,
+.network-grid a:focus-visible {
+    outline: 3px solid var(--leko-gold);
+    outline-offset: 4px;
+}
 
 .btn-secondary {
     background-color: transparent;
@@ -325,12 +347,7 @@ footer {
 }
 
 .about {
-    background-color: white;
-    padding: 50px 30px;
-    max-width: 900px;
-    margin: 40px auto;
-    border-radius: 10px;
-    text-align: center;
+      text-align: center;
 }
 
 
@@ -338,6 +355,33 @@ footer {
     font-size: 18px;
     line-height: 1.7;
 }
+
+.values,
+.products,
+.stories,
+.join {
+    text-align: center;
+}
+
+.values > p,
+.products > p,
+.stories > p,
+.join > p {
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.7;
+}
+
+.about,
+.values,
+.community,
+.products,
+.stories,
+.network,
+.join {
+    scroll-margin-top: 100px;
+}
+
 .community {
     background-color: var(--leko-blue);
     color: white;
@@ -366,25 +410,48 @@ footer {
     margin-top: 40px;
 }
 
+.community-card,
+.value-card,
+.product-card {
+    width: 220px;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    text-align: center;
+}
 
 .community-card {
     background-color: white;
     color: var(--leko-dark);
-    width: 220px;
-    padding: 25px;
-    border-radius: 15px;
 }
 
+.value-card,
+.product-card {
+    background-color: var(--leko-cream);
+}
 
-.community-card h3 {
+.community-card h3,
+.value-card h3,
+.product-card h3 {
     color: var(--leko-blue);
 }
+
 .logo {
     width: 110px;
     height: 110px;
     object-fit: contain;
     border-radius: 12px;
 }
+
+.value-container,
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
 
 .menu-toggle {
     display: none;
@@ -397,6 +464,9 @@ footer {
     font-weight: 700;
     cursor: pointer;
 }
+
+
+
 /* Network*/
 
 .network {
@@ -459,24 +529,23 @@ footer {
         gap: 15px;
     }
 
-
     .brand {
         width: 100%;
         justify-content: center;
     }
-
 
     .header-logo {
         width: 52px;
         height: 52px;
     }
 
-
     .menu-toggle {
-    display: block;
-    transition: background-color 0.25s ease,
+        display: block;
+        transition:
+            background-color 0.25s ease,
             transform 0.2s ease;
     }
+
     .menu-toggle:hover {
         transform: scale(1.05);
     }
@@ -484,19 +553,17 @@ footer {
     .main-nav {
         width: 100%;
         margin-left: 0;
-
         max-height: 0;
         overflow: hidden;
-
         opacity: 0;
 
         transition:
-        max-height 0.35s ease,
-        opacity 0.25s ease;
+            max-height 0.35s ease,
+            opacity 0.25s ease;
     }
 
     .main-nav.is-open {
-        max-height: 400px;
+        max-height: 500px;
         opacity: 1;
     }
 
@@ -504,6 +571,10 @@ footer {
         flex-direction: column;
         gap: 12px;
         padding: 18px 0 5px;
+    }
+
+    .main-nav a {
+        font-size: 16px;
     }
 
     .language-nav {
@@ -518,16 +589,6 @@ footer {
         display: flex;
     }
 
-    .main-nav a {
-        font-size: 16px;
-    }
-
-
-    .language-nav {
-        padding-left: 0;
-        border-left: none;
-        justify-content: center;
-    }
     .hero {
         padding: 44px 18px 34px;
     }
@@ -561,6 +622,7 @@ footer {
         max-width: 360px;
         margin: 0 auto;
         padding: 0 12px;
+        box-sizing: border-box;
 
         color: var(--leko-blue);
         font-size: 15px;
@@ -571,7 +633,6 @@ footer {
         white-space: normal;
         overflow: visible;
         overflow-wrap: anywhere;
-        box-sizing: border-box;
     }
 
     .hero-image {
@@ -583,16 +644,11 @@ footer {
         max-width: 390px;
     }
 
-
-
-}
-
     section {
         width: auto;
         margin: 20px 15px;
         padding: 30px 20px;
     }
-
 
     .value-container,
     .community-container,
@@ -600,7 +656,6 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-
 
     .value-card,
     .community-card,
@@ -610,11 +665,9 @@ footer {
         box-sizing: border-box;
     }
 
-
     h2 {
         font-size: 28px;
     }
-
 
     p {
         overflow-wrap: break-word;
