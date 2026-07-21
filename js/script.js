@@ -314,11 +314,11 @@ if (menuToggle && mainNav && languageNav) {
     });
 }
 
-document.querySelectorAll(".product-toggle").forEach(button => {
+document.querySelectorAll(".accordion-toggle").forEach(button => {
     button.addEventListener("click", () => {
-        const productList = button.nextElementSibling;
+        const content = button.nextElementSibling;
 
-        productList.classList.toggle("open");
+       content.classList.toggle("open");
         button.classList.toggle("active");
     });
 });

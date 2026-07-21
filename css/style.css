@@ -676,7 +676,7 @@ footer {
 }
 
 /* Botón de las categorías */
-.product-toggle {
+.accordion-toggle {
     width: 100%;
     background: none;
     border: none;
@@ -690,12 +690,12 @@ footer {
     transition: color 0.2s ease;
 }
 
-.product-toggle:hover {
+.accordion-toggle:hover {
     color: var(--leko-gold);
 }
 
 /* Lista oculta */
-.product-list {
+.accordion-content {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -706,11 +706,11 @@ footer {
 }
 
 /* Lista visible */
-.product-list.open {
+.accordion-content.open {
     max-height: 300px;
 }
 
-.product-list li {
+.accordion-content li {
     margin: 8px 0;
 }
 
@@ -720,6 +720,6 @@ footer {
     transition: transform 0.3s ease;
 }
 
-.product-toggle.active .arrow {
+.accordion-toggle.active .arrow {
     transform: rotate(90deg);
 }
