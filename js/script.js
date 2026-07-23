@@ -41,7 +41,7 @@ const translations = {
         "community.paragraph2": "Unsere Mitglieder beteiligen sich aktiv an der Organisation der Kooperative. Durch Mitgliederversammlungen und verschiedene Arbeitsgruppen gestalten wir unsere Lebensmittelversorgung gemeinsam.",
 
         "community.delivery.title": "🚚 AG Lieferung",
-        "community.delivery.text": "Organisation der Lieferungen und Verteilung der Waren.",
+        "community.delivery.text": " Organisation der Bestellungen und Kauf der Waren.",
 
         "community.members.title": "👥 AG Mitglieder",
         "community.members.text": "Begleitung neuer Mitglieder und Pflege der Gemeinschaft.",
@@ -50,22 +50,55 @@ const translations = {
         "community.finance.text": "Verwaltung und Organisation der finanziellen Bereiche.",
 
         "community.care.title": "💚 AG Care",
-        "community.care.text": "Kommunikation, Unterstützung und Miteinander.",
+        "community.care.text": "Auspacken und Aufräumen der Produkte bei ihrer Zustellung.",
 
         "products.title": "Was wir anbieten",
         "products.intro": "Gemeinsam wählen wir Produkte und Produzenten aus, die zu unseren sozialen und ökologischen Werten passen.",
 
-        "products.grains.title": "🌾 Getreide",
-        "products.grains.text": "Reis, Getreide und weitere haltbare Lebensmittel.",
+        "products.dryGoods.title": "🌾 Trockenwaren",
+        "products.dryGoods.text": `
+        <li>Getreide</li>
+        <li>Mehl</li>
+        <li>Nudeln</li>
+        <li>Reis</li>
+        <li>Bohnen & Hülsenfrüchte</li>
+        <li>Nüsse</li>
+        <li>Trockenfrüchte</li>
+        `,
 
-        "products.legumes.title": "🫘 Bohnen & Hülsenfrüchte",
-        "products.legumes.text": "Nahrhafte Produkte für eine bewusste Ernährung.",
+        "products.teaCoffee.title": "🍵 Tee & Kaffee",
+        "products.teaCoffee.text": `
+        <li>Tee</li>
+        <li>Kaffee</li>
+        `,
 
-        "products.dryGoods.title": "📦 Trockenwaren",
-        "products.dryGoods.text": "Langlebige Lebensmittel ohne unnötige Verpackung.",
+        "products.spices.title": "🌿 Gewürze",
+        "products.spices.text": `
+        <li>Gewürze</li>
+        `,
 
-        "products.fairProducts.title": "🌍 Faire Produkte",
-        "products.fairProducts.text": "Verantwortungsbewusst einkaufen und handeln.",
+        "products.spreads.title": "🥜 Aufstriche",
+        "products.spreads.text": `
+        <li>Aufstriche</li>
+        `,
+
+        "products.liquids.title": "🍶 Flüssiges",
+        "products.liquids.text": `
+        <li>Öl</li>
+        <li>Essig</li>
+        <li>Pflanzliche Milch & Sahne</li>
+        `,
+
+        "products.household.title": "🧴 Drogerie",
+        "products.household.text": `
+        <li>Waschmittel</li>
+        <li>Wollwaschmittel</li>
+        <li>Enthärter</li>
+        <li>Spülmittel</li>
+        <li>Geschirrspülmittel</li>
+        <li>WC-Reiniger</li>
+        <li>Handseife</li>
+        `,
 
         "decision.title": "Wie wir entscheiden",
         "decision.text": "Gemeinsam wählen wir Produkte und Produzenten aus, die zu unseren sozialen und ökologischen Werten passen.",
@@ -124,7 +157,7 @@ const translations = {
         "community.paragraph2": "Our members actively participate in organizing the cooperative. Through general meetings and various working groups, we shape our food supply together.",
 
         "community.delivery.title": "🚚 Delivery Team",
-        "community.delivery.text": "Organising deliveries and distributing products.",
+        "community.delivery.text": "Organization of orders and purchasing of goods.",
 
         "community.members.title": "👥 Membership Team",
         "community.members.text": "Supporting new members and strengthening the community.",
@@ -133,22 +166,55 @@ const translations = {
         "community.finance.text": "Managing and organising the cooperative's finances.",
 
         "community.care.title": "💚 Care Team",
-        "community.care.text": "Communication, mutual support and community care.",
+        "community.care.text": "Unpacking and organizing the products upon delivery.",
 
         "products.title": "What We Offer",
         "products.intro": "Together, we select products and producers that reflect our social and ecological values.",
 
-        "products.grains.title": "🌾 Grains",
-        "products.grains.text": "Rice, grains and other long-lasting food products.",
+        "products.dryGoods.title": "🌾 Dry Goods",
+        "products.dryGoods.text": `
+        <li>Grains</li>
+        <li>Flour</li>
+        <li>Pasta</li>
+        <li>Rice</li>
+        <li>Beans & legumes</li>
+        <li>Nuts</li>
+        <li>Dried fruit</li>
+        `,
 
-        "products.legumes.title": "🫘 Beans & Legumes",
-        "products.legumes.text": "Nutritious foods for a conscious and healthy diet.",
+        "products.teaCoffee.title": "🍵 Tea & Coffee",
+        "products.teaCoffee.text": `
+        <li>Tea</li>
+        <li>Coffee</li>
+        `,
 
-        "products.dryGoods.title": "📦 Dry Goods",
-        "products.dryGoods.text": "Long-lasting foods with minimal packaging.",
+        "products.spices.title": "🌿 Spices",
+        "products.spices.text": `
+        <li>Spices</li>
+        `,
 
-        "products.fairProducts.title": "🌍 Fair Products",
-        "products.fairProducts.text": "Products sourced through fair and responsible trade.",
+        "products.spreads.title": "🥜 Spreads",
+        "products.spreads.text": `
+        <li>Spreads</li>
+        `,
+      
+        "products.liquids.title": "🍶 Liquids",
+        "products.liquids.text": `
+        <li>Oil</li>
+        <li>Vinegar</li>
+        <li>Plant-based milk & cream</li>
+        `,
+
+        "products.household.title": "🧴 Household & Personal Care",
+        "products.household.text": `
+        <li>Laundry detergent</li>
+        <li>Wool detergent</li>
+        <li>Water softener</li>
+        <li>Dish soap</li>
+        <li>Dishwasher detergent</li>
+        <li>Toilet cleaner</li>
+        <li>Hand soap</li>
+        `,
 
         "decision.title": "How we decide",
         "decision.text": "Together, we select products and producers that reflect our social and ecological values.",
@@ -206,7 +272,7 @@ const translations = {
         "community.paragraph2": "Nuestros miembros participan activamente en la organización de la cooperativa. A través de las asambleas y de diferentes grupos de trabajo, construimos juntos nuestra forma de abastecernos de alimentos.",
 
         "community.delivery.title": "🚚 Grupo de logística",
-        "community.delivery.text": "Organización de las entregas y distribución de los productos.",
+        "community.delivery.text": "Organización de los pedidos y compra de los productos.",
 
         "community.members.title": "👥 Grupo de miembros",
         "community.members.text": "Acompañamiento de nuevos miembros y fortalecimiento de la comunidad.",
@@ -215,22 +281,55 @@ const translations = {
         "community.finance.text": "Gestión y organización de las áreas financieras.",
 
         "community.care.title": "💚 Grupo de cuidados",
-        "community.care.text": "Comunicación, apoyo mutuo y bienestar de la comunidad.",
+        "community.care.text": "Desembalaje y organización de los productos al recibirlos.",
 
         "products.title": "Lo que ofrecemos",
         "products.intro": "Elegimos conjuntamente productos y productores que estén en consonancia con nuestros valores sociales y ecológicos.",
 
-        "products.grains.title": "🌾 Cereales",
-        "products.grains.text": "Arroz, cereales y otros alimentos de larga conservación.",
+        "products.dryGoods.title": "🌾 Productos secos",
+        "products.dryGoods.text": `
+        <li>Cereales</li>
+        <li>Harina</li>
+        <li>Pasta</li>
+        <li>Arroz</li>
+        <li>Judías y legumbres</li>
+        <li>Frutos secos</li>
+        <li>Fruta deshidratada</li>
+        `,
 
-        "products.legumes.title": "🫘 Legumbres",
-        "products.legumes.text": "Alimentos nutritivos para una alimentación consciente.",
+        "products.teaCoffee.title": "🍵 Té y café",
+        "products.teaCoffee.text": `
+        <li>Té</li>
+        <li>Café</li>
+        `,
 
-        "products.dryGoods.title": "📦 Productos secos",
-        "products.dryGoods.text": "Alimentos duraderos con el mínimo de envases.",
+        "products.spices.title": "🌿 Especias",
+        "products.spices.text": `
+        <li>Especias</li>
+        `,
 
-        "products.fairProducts.title": "🌍 Productos de comercio justo",
-        "products.fairProducts.text": "Productos obtenidos mediante un comercio justo y responsable.",
+        "products.spreads.title": "🥜 Cremas para untar",
+        "products.spreads.text": `
+        <li>Cremas para untar</li>
+        `,
+
+        "products.liquids.title": "🍶 Productos líquidos",
+        "products.liquids.text": `
+        <li>Aceite</li>
+        <li>Vinagre</li>
+        <li>Leche y nata vegetales</li>
+        `,
+
+        "products.household.title": "🧴 Productos de limpieza e higiene",
+        "products.household.text": `
+        <li>Detergente para la ropa</li>
+        <li>Detergente para lana</li>
+        <li>Descalcificador</li>
+        <li>Lavavajillas a mano</li>
+        <li>Detergente para lavavajillas</li>
+        <li>Limpiador para WC</li>
+        <li>Jabón de manos</li>
+        `,
 
         "decision.title": "Cómo decidimos",
         "decision.text": "Elegimos conjuntamente productos y productores que estén en consonancia con nuestros valores sociales y ecológicos.",
@@ -267,8 +366,14 @@ function changeLanguage(language) {
         const translatedText = selectedTranslations[translationKey];
 
         if (translatedText) {
-            element.textContent = translatedText;
-        }
+            const containsHTML = translatedText.includes("<");
+
+            if (containsHTML) {
+                element.innerHTML = translatedText;
+            } else {
+                element.textContent = translatedText;
+            }
+        }   
     });
 
     document.documentElement.lang = language;

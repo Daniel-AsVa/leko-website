@@ -408,6 +408,7 @@ footer {
     justify-content: center;
     gap: 25px;
     margin-top: 40px;
+    align-items: flex-start;
 }
 
 .community-card,
